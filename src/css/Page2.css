@@ -1,0 +1,130 @@
+.page2Section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.greyDesign{
+    height: 100%;
+    width: 20%;
+    background-color: #c8ebad;
+    position: relative;
+}
+
+
+
+.page2Container{
+    width: 60vw;
+    height: 90%;
+    background-color: #A5CE34;
+    position: absolute;
+    
+    border-radius: 3vh;
+    color: white;
+    padding-top: 5%;
+    
+    overflow: hidden;
+}
+
+.contactFormHeading{
+    font-size: 10vh;
+    margin-bottom: 10vh;
+}
+
+.contactFormContainer{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    
+    padding: 40px;
+    border-radius: 3vh;
+}
+
+.contactForm{
+    font-size: 6vh;
+    color: #153001;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2vh;
+}
+
+.formGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2vh;
+}
+
+.formGroup > input{
+    height: 5vh;
+    width: 100%;
+    padding: 1vh 2vh;
+    font-size: 2.5vh;
+    color: #153001;
+    border: 1px solid #A5CE34;
+    border-radius: 1vh;
+    margin-top: 1vh;
+    transition: border-color 0.3s ease;
+}
+
+.formGroup > input:focus {
+    border-color: #153001;
+    outline: none;
+}
+
+.formGroup > input::placeholder{
+    color: #A5CE34;
+    font-size: 2.5vh;
+}
+
+.circleDesign{
+    width: 20vw;
+    height: 35vh;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+}
+
+.testimonialPlant{
+    position: absolute;
+    left: -30%;
+    rotate: 30deg;
+}
+
+@media (max-width: 600px) {
+    
+
+    .page2Container{
+        width: 80vw;
+        transform: translateY(-5%);
+    }
+    .circleDesign{
+        width: 40vw;
+        height: 25vh;
+        top: 5%;
+    }
+
+    .testimonialPlant{
+        height: 45vh;
+        left: -50%;
+    }
+    
+}
